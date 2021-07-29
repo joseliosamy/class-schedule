@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./public/styles/global.css">
+
+  <title>Decifrador de horários - UFPB</title>
+</head>
+<body>
+  <div id="container">
+
+    <div class="converter">
+
+      <form>
+        <label>Decifrador de horários, UFPB</label>
+        <fieldset class="form_item">
+          <label>Informe o código do horário:</label>
+          <div class="inputs">
+            <input type="text" placeholder="Digite o código" name="code" required autocomplete="off">
+            <button type="button" name="submit">Decifrar</button>
+          </div>
+        </fieldset>
+        <div class="decifre">
+
+          <div class="status">
+            <p class="status_successful">Decifrado com sucesso! 
+              <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px">
+                <path d="M 12 2 C 6.4889971 2 2 6.4889971 2 12 C 2 17.511003 6.4889971 22 12 22 C 17.511003 22 22 17.511003 22 12 C 22 6.4889971 17.511003 2 12 2 z M 12 4 C 16.430123 4 20 7.5698774 20 12 C 20 16.430123 16.430123 20 12 20 C 7.5698774 20 4 16.430123 4 12 C 4 7.5698774 7.5698774 4 12 4 z M 16.292969 8.2929688 L 10 14.585938 L 7.7070312 12.292969 L 6.2929688 13.707031 L 10 17.414062 L 17.707031 9.7070312 L 16.292969 8.2929688 z"/>
+              </svg>
+            </p>
+            <p class="status_error">Erro ao decifrar
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">    
+                <path d="M 15 3 C 14.168432 3 13.456063 3.5067238 13.154297 4.2285156 L 2.3007812 22.947266 L 2.3007812 22.949219 A 2 2 0 0 0 2 24 A 2 2 0 0 0 4 26 A 2 2 0 0 0 4.140625 25.994141 L 4.1445312 26 L 15 26 L 25.855469 26 L 25.859375 25.992188 A 2 2 0 0 0 26 26 A 2 2 0 0 0 28 24 A 2 2 0 0 0 27.699219 22.947266 L 27.683594 22.919922 A 2 2 0 0 0 27.681641 22.917969 L 16.845703 4.2285156 C 16.543937 3.5067238 15.831568 3 15 3 z M 13.787109 11.359375 L 16.212891 11.359375 L 16.011719 17.832031 L 13.988281 17.832031 L 13.787109 11.359375 z M 15.003906 19.810547 C 15.825906 19.810547 16.318359 20.252813 16.318359 21.007812 C 16.318359 21.748812 15.825906 22.189453 15.003906 22.189453 C 14.175906 22.189453 13.679688 21.748813 13.679688 21.007812 C 13.679688 20.252813 14.174906 19.810547 15.003906 19.810547 z">
+                </path>
+              </svg>
+            </p>
+            
+          </div>
+
+          <div class="result">
+            <p></p>
+          </div>
+        </div>
+      </form>
+    </div>
+
+  </div>
+  <script src="./public/scripts/decifre.js"></script>
+</body>
+</html>
