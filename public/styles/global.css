@@ -27,6 +27,7 @@ body{
 }
 #container{
   width: 100%;
+  backdrop-filter: brightness(80%);
 }
 .converter{
   width: 100%;
@@ -45,7 +46,7 @@ form{
   padding: 35px 15px 20px 15px;
   margin: 0 20px;
   backdrop-filter: blur(12px);
-  background-color: #ffffff25;
+  background-color: var(--schemma-bg);
   border-radius: 5px;
   box-shadow: 1px 1px 5px var(--color-shadow);
   transition: height .4s ease-in-out;
@@ -155,8 +156,58 @@ form .decifre .result{
   padding: 0 20px;
   display: flex;
   align-items: center;
-  background-color: #ffffff25;
+  background-color: var(--schemma-bg);
   border-radius: 10px;
+}
+
+
+footer{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .footer_wrapper{
+  padding: 3px 5px;
+  border-radius: 5px 5px 0 0;
+
+}
+footer .footer_wrapper a{
+  text-decoration: none;
+  font-weight: 500;
+  font-size: .9rem;
+  text-align: center;
+  color: var(--schemma-text);
+}
+footer .footer_wrapper .my{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .footer_wrapper .my a{
+  transition: 200ms;
+}
+footer .footer_wrapper .my a:hover{
+  color: #17cf82;
+}
+footer .footer_wrapper .socials a:hover svg{
+  transform: scale(1.1,1.1);
+}
+footer .footer_wrapper .socials a svg{
+  fill: rgba(238, 253, 251, 0.61);
+  transition: 200ms;
+}
+footer .footer_wrapper .socials a svg:hover{
+  fill: #17cf82;
+}
+
+@media(max-width: 560px){
+  form .decifre .result p{
+    font-size: 1.1rem;
+  }
 }
 
 @keyframes boom {
