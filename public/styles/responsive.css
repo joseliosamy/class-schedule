@@ -1,19 +1,19 @@
-
 @media(max-width: 560px){
   body{
     background-position: 100% 0;
   }
-  form form .form_item .inputs{
+  form .form_item .inputs{
     flex-direction: column;
   }
-  form form .form_item .inputs button[name="submit"]{
+  form .form_item .inputs button[name="submit"]{
     width: 100%;
     margin: 5px 0 0 0;
   }
-  form form .form_item .decifre{
+  form .form_item .decifre{
     margin-top: 7px;
   }
   form .decifre .result p{
     font-size: 1.1rem;
   }
+  
 }
