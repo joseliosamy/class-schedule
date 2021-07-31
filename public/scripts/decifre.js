@@ -130,8 +130,10 @@ function activeStatusResults(turnPosition){
       }
       //Se o status de sucesso existir
       else if(document.querySelector(".status_successful")){
+        console.log("sucesso")
         //Setando a altura do painel de resultado para 0
-        document.querySelector(".result").style.height = "0";
+        results.style.height = "0";
+        results.style.padding = '0';
 
         //Removendo o status de sucesso
         document.querySelector(".status_successful").parentElement.removeChild(document.querySelector(".status_successful"))
@@ -201,7 +203,8 @@ function activeStatusResults(turnPosition){
         </p>
       `)
       //Setando a altura do painel de resultado para 10vh
-      result.style.height = '10vh'
+      result.style.height = '100%'
+      result.style.padding = '20px 10px'
     }
   }
   //Se a quantidade de posições do inputValue for igual a 0
@@ -229,6 +232,7 @@ function activeStatusResults(turnPosition){
       `)
       //Setando a altura do painel de resultados para 0
       result.style.height = '0'
+      result.style.padding = '0'
     }
   }
 }
@@ -379,7 +383,7 @@ submit.addEventListener('click', ()=>{
             qtdInputValue[0] += (inputValue[i] * 10);
 
             if(qtdInputValue[0] == 10) 
-              decifreSchedule.push( {comeco: "7:10h",fim : "8:00h"} )
+              decifreSchedule.push( {comeco: "7:00h",fim : "8:00h"} )
 
             break;
 
@@ -388,7 +392,7 @@ submit.addEventListener('click', ()=>{
             qtdInputValue[1] += (inputValue[i] * 10);
 
             if(qtdInputValue[1] == 20) 
-              decifreSchedule.push( {comeco: "8:00h",fim : "8:50h"} )
+              decifreSchedule.push( {comeco: "8:00h",fim : "9:00h"} )
             break;
 
           case '3' :
@@ -396,7 +400,7 @@ submit.addEventListener('click', ()=>{
             qtdInputValue[2] += (inputValue[i] * 10);
 
             if(qtdInputValue[2] == 30) 
-              decifreSchedule.push( {comeco: "8:50h",fim : "9:40h"} )
+              decifreSchedule.push( {comeco: "9:00h",fim : "10:00h"} )
             break;
 
           case '4' :
@@ -404,7 +408,7 @@ submit.addEventListener('click', ()=>{
             qtdInputValue[3] += (inputValue[i] * 10);
 
             if(qtdInputValue[3] == 40) 
-              decifreSchedule.push( {comeco: "9:50h",fim : "10:40h"} )
+              decifreSchedule.push( {comeco: "10:00h",fim : "11:00h"} )
             break;
 
           case '5' :
@@ -412,7 +416,7 @@ submit.addEventListener('click', ()=>{
             qtdInputValue[4] += (inputValue[i] * 10);
 
             if(qtdInputValue[4] == 50) 
-              decifreSchedule.push( {comeco: "10:40h",fim : "11:30h"} )
+              decifreSchedule.push( {comeco: "11:00h",fim : "12:00h"} )
             break;
         }
       }
@@ -434,7 +438,7 @@ submit.addEventListener('click', ()=>{
             qtdInputValue[0] += (inputValue[i] * 10);
 
             if(qtdInputValue[0] == 10) 
-              decifreSchedule.push( {comeco: "13:10h",fim : "14:00h"} )
+              decifreSchedule.push( {comeco: "13:00h",fim : "14:00h"} )
             break;
 
           case '2' :
@@ -442,7 +446,7 @@ submit.addEventListener('click', ()=>{
             qtdInputValue[1] += (inputValue[i] * 10);
 
             if(qtdInputValue[1] == 20) 
-              decifreSchedule.push( {comeco: "14:00h",fim : "14:50h"} )
+              decifreSchedule.push( {comeco: "14:00h",fim : "15:00h"} )
             break;
 
           case '3' :
@@ -450,7 +454,7 @@ submit.addEventListener('click', ()=>{
             qtdInputValue[2] += (inputValue[i] * 10);
 
             if(qtdInputValue[2] == 30) 
-              decifreSchedule.push( {comeco: "14:50h",fim : "15:40h"} )
+              decifreSchedule.push( {comeco: "15:00h",fim : "16:00h"} )
             break;
 
           case '4' :
@@ -458,7 +462,7 @@ submit.addEventListener('click', ()=>{
             qtdInputValue[3] += (inputValue[i] * 10);
 
             if(qtdInputValue[3] == 40) 
-              decifreSchedule.push( {comeco: "15:50h",fim : "16:40h"} )
+              decifreSchedule.push( {comeco: "16:00h",fim : "17:00h"} )
             break;
 
           case '5' :
@@ -466,7 +470,7 @@ submit.addEventListener('click', ()=>{
             qtdInputValue[4] += (inputValue[i] * 10);
 
             if(qtdInputValue[4] == 50) 
-              decifreSchedule.push( {comeco: "16:40h",fim : "17:30h"} )
+              decifreSchedule.push( {comeco: "17:00h",fim : "18:00h"} )
             break;
 
           case '6' :
@@ -474,7 +478,7 @@ submit.addEventListener('click', ()=>{
             qtdInputValue[5] += (inputValue[i] * 10);
 
             if(qtdInputValue[5] == 60) 
-              decifreSchedule.push( {comeco: "17:30h",fim : "18:20h"} )
+              decifreSchedule.push( {comeco: "18:00h",fim : "19:00h"} )
             break;
         }
       }

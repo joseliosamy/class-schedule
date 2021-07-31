@@ -1,0 +1,125 @@
+form{
+  min-height: 160px;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 35px 15px 20px 15px;
+  margin: 0 20px;
+  backdrop-filter: blur(12px);
+  background-color: var(--schemma-bg);
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px var(--color-shadow);
+  transition: .4s ease-in-out;
+  overflow: hidden;
+}
+form > h1{
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  cursor: auto;
+}
+
+form .form_item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 10px;
+  border: 0;
+}
+form .form_item label{
+  font-weight: 500;
+  text-align: center;
+  font-size: .9rem;
+}
+form .form_item .inputs{
+  width: 100%;
+  display: flex;
+}
+form .form_item .inputs input, button{
+  width: 100%;
+  height: 100%;
+  background: none;
+  font-size: 1rem;
+  padding: .8rem;
+  outline: 0;
+  border: 1px solid var(--schemma-border);
+  border-radius: .5rem;
+  color: var(--schemma-text);
+  margin-top: 3px;
+}
+form .form_item .inputs input[name="code"]::placeholder{
+  color: var(--schemma-text);
+}
+form .form_item .inputs input[name="code"]:focus{
+  border-color: var(--schemma-border-on);
+}
+form .form_item .inputs button[name="submit"]{
+  width: 30%;
+  border: 0;
+  margin-left: 5px;
+  background-image: linear-gradient( 117deg,  #15dbba 11.2%, #07A2B3 78.1% );
+  background-size: 100% 100%;
+  cursor: pointer;
+  transition: background 400ms;
+}
+form .form_item .inputs button[name="submit"]:hover{
+  background-size: 150% 150%;
+}
+form .form_item .inputs button[name="submit"]:active{
+  background-size: 200% 200%;
+  box-shadow: 0 0 6px #15dbba;
+}
+
+form .decifre{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+form .decifre .status{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 10px;
+}
+form .decifre .status p{
+  text-align: center;
+  font-weight: 500;
+  font-size: .9rem;
+  margin-right: 2px;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 50px;
+  border-radius: 5px;
+}
+form .decifre .status .status_successful{
+  display: flex;
+  background-image: linear-gradient( 109.6deg,  #0afa96 11.2%, #1ef16b 91.1% );
+  animation: boom 700ms;
+}
+form .decifre .status .status_error{
+  display: flex;
+  background-image: linear-gradient( 109.6deg,  #e9622cd8 11.2%, #f14f1ee0 91.1% );
+  animation: boom 700ms;
+}
+form .decifre .status .status_error svg{
+  width: 24px;
+  margin-left: 3px;
+}
+form .decifre .status svg{
+  fill: var(--schemma-text);
+}
+form .decifre .result{
+  width: 100%;
+  text-align: center;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  background-color: var(--schemma-bg);
+  border-radius: 10px;
+}
